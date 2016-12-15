@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta kika_native_launcher_visibility="false"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- iOS -->
+    <meta property="al:ios:url" content="applinks://docs">
+    <meta property="al:ios:app_store_id" content="12345">
+    <meta property="al:ios:app_name" content="App Links">
+    <!-- Android -->
+    <meta property="al:android:url" content="applinks://docs">
+    <meta property="al:android:app_name" content="App Links">
+    <meta property="al:android:package" content="org.applinks">
+    <!-- Web Fallback -->
+    <meta property="al:web:url" content="http://applinks.org/documentation">
+    <!-- More info: http://applinks.org/documentation/ -->
+
+
     <meta property="og:type" content="website">
     <meta property="og:image" content="<%= imgUrl %>">
     <meta property="og:title" content="<%= title %>">
     <meta property="og:description" content="">
+
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="<%= title %>">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="<%= imgUrl %>">
+
+
+    <meta itemprop="name" content="<%= title %>">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="<%= imgUrl %>">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900" rel="stylesheet">
     <title><%= title %></title>
     <style>

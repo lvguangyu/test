@@ -1,0 +1,45 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#map{
+    width: 100%;
+    height: 100%;
+}
+.cover{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+.big-btn{
+    position: absolute;
+    right: 15px;
+    bottom: 80px;
+    width: 50px;
+    height: 50px;
+}
+.big-btn:active {
+    opacity: .5;
+}
+.share{
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+}
+.share:active {
+    opacity: .5;
+}
+.power{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: right;
+    color: rgba(0,0,0,.5);
+    font-size: 12px;
+}

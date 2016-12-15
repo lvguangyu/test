@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta kika_native_launcher_visibility="false"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900" rel="stylesheet">
+    <title><%= title %></title>
+    <style>
+        .ytp-title-link span{
+            display: none !important;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/reset.css?__inline"/>
+    <link rel="stylesheet" href="./css/trendingv.css?__inline"/>
+    <link rel="stylesheet" href="./css/trendingvPlay.css?__inline"/>
+</head>
+<body>
+    <div id="player" class="playerContainer">
+    </div>
+    <div class="info">
+        <div id="info_title" class="title">
+            <!--Jennifer Lawrence On Smoking Pot Before The Oscars - Plead The Fifth - WWHL-->
+        </div>
+        <img id="preview" src="<%= imgUrl %>" alt="" style="position:absolute;width: 0px;height: 0px;"/>
+        <div class="channel-info">
+            <span id="channel_title" class="channel-title"></span> <span id="views" class="views"></span>
+        </div>
+        <div class="like">
+            <img src="http://cdn.kikakeyboard.com/open_platform/images/youtube/like.png" alt=""/><span id="like_count" class="count"></span>
+            <img class="dislike" src="http://cdn.kikakeyboard.com/open_platform/images/youtube/dislike.png" alt=""/><span id="dis_like_count" class="count"></span>
+        </div>
+    </div>
+    <div class="related-video">
+        <div class="related-title">
+            Related video
+        </div>
+        <div class="content">
+            <div id="list" class="list">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="./js/jquery.lazyload.js?__inline"></script>
+<script src="./js/utils.js?__inline"></script>
+<script src="./js/trendingvPlay.js?__inline"></script>
+<script>
+//    var fr_doc = document.getElementById("player").contentWindow.document;
+//    $(fr_doc).find('div[class^="ytp-chrome-top"]').css('display','none !important');
+
+</script>
+</html>

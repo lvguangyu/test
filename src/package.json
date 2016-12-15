@@ -1,0 +1,16 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug": "fis3 release debug -d ../dist -wL",
+    "release": "fis3 release -d ../dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fis3": "^3.4.25",
+    "fis3-postpackager-loader": "^2.1.4"
+  }
+}

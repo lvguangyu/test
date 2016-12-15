@@ -1,0 +1,60 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.playerContainer{
+    width: 100vw;
+    height: 56.25vw;
+}
+.info{
+    padding:3.33vw;
+    font-size: 5vw;
+    border-bottom: 1px solid #ECEFF1;
+}
+.channel-info{
+    margin-top: 3.33vw;
+    font-size: 3.7vw;
+}
+.title{
+    margin-top: 0;
+    font-size: 5vw;
+    line-height: 7vw;
+    height: auto;
+}
+.views{
+    color: #999999;
+}
+.views:before {
+    content: "\0000b7";
+    margin-right: 5px;
+}
+.like{
+    margin-top: 3.4vw;
+    font-size: 4.3vw;
+    line-height: 5.55vw;
+    color: #999999;
+}
+.like img{
+    width: 5.55vw;
+    margin-top: -5px;
+    vertical-align: middle;
+
+}
+.dislike{
+    margin-left: 6.66vw;
+}
+.like .count{
+    margin-left: 2.22vw;
+}
+.related-video{
+    width: 100%;
+}
+.related-title{
+    color: #999999;
+    margin: 3.33vw auto auto 3.33vw;
+}
+.list-title{
+    margin-top: 2.22vw;
+    font-size:3.66vw ;
+    line-height: 4.5vw;
+    /*height: 9vw;*/
+}

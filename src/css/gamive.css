@@ -1,0 +1,73 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.content{
+    width: 100vw;
+    padding-bottom: 2.77vw;
+
+}
+.list{
+    display: flex;
+    -webkit-flex-flow: row wrap;
+
+}
+.list .listItem{
+    width: 45.83vw;
+    height: 25.78vw;
+    margin-left: 2.77vw;
+    margin-top: 2.77vw;
+    position: relative;
+}
+.listItem img{
+    width: 45.83vw;
+    height: 25.78vw;
+}
+.listItem .text{
+    position: absolute;
+    width: 45.83vw;
+    /*height: 9.44vw;*/
+    bottom: 0;
+    left:0;
+    color: white;
+    background: #000;
+    filter:alpha(opacity=80);
+    -moz-opacity:0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+
+}
+
+.listItem .text .game-name{
+    font-size: 2.77vw;
+    margin-left: .277vw;
+    color:#B59CE6 ;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+
+
+}
+.listItem .text .name{
+    font-size: 2.5vw;
+    margin-left: .277vw;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+
+}
+
+.listItem .text .game-views{
+    font-size: 1.94vw;
+    color: #fff;
+    text-align: right;
+    margin-right: .277vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+
+}

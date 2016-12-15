@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta kika_actionbar_visibility="false" kika_native_launcher_visibility="false"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="./css/yahoo.css?__inline"/>
+    <title></title>
+</head>
+<body>
+    <div class="content table-style">
+        <span >
+            <div id="all">
+
+                <div class="weather">
+                    <div class="weather-img"><img id="weather_image" src="http://cdn.kikakeyboard.com/open_platform/images/youtube/clear_day.png" alt=""/></div>
+                    <div id="weather_text" class="weather-name"></div>
+                    <div id="shareBtn" class="share-btn"><img src="http://cdn.kikakeyboard.com/open_platform/images/youtube/share1.png" alt=""/></div>
+                </div>
+                <div class="top-low">
+                    <div id="top-text" class="top">
+                    </div>
+                    <div id="low-text" class="low">
+                    </div>
+                </div>
+                <div class="timely">
+                    <div class="temperature">
+                        <div id="t" class="t"></div>
+                        <div class="f-c">
+                            <button id="f" class="btn f-c-active">F</button>
+                            <br/>
+                            <button id="c" class="btn">C</button>
+                        </div>
+                    </div>
+                    <div class="city">
+                        <div id="city" class="city-big">
+
+                        </div>
+                        <div id="country" class="city-small">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </div>
+    <div class="power">Powered by Jupaidaren.com</div>
+</body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//js.maxmind.com/js/apis/geoip2/v2.0/geoip2.js"></script>
+<script src="./js/weather.js?__inline"></script>
+<script src="./js/yahoo.js?__inline"></script>
+
+</html>

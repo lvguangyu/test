@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta kika_actionbar_visibility="false"/>
+    <meta kika_native_launcher_visibility="false"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,400,700,900" rel="stylesheet">
+    <link href="./css/reset.css?__inline" rel="stylesheet" >
+    <link href="./css/map.css?__inline" rel="stylesheet" >
+    <title>Map</title>
+    <script>
+//        window.onresize=function(){
+//            autorun();
+//        };
+        function autorun() {
+            var dpr = window.devicePixelRatio;
+            var width = screen.width;
+            if(dpr){
+                if(dpr>=4){
+                    width = screen.width*1.5;
+
+                }else if(dpr>=3){
+                    width = screen.width*1.3;
+
+                }else if(dpr>=2){
+                    width = screen.width*1.1;
+                }
+            }
+            console.log('dpr'+dpr);
+            var fontSize = width/7.2;
+            window.document.documentElement.style.fontSize = fontSize + 'px';
+        }
+        autorun();
+    </script>
+</head>
+<body>
+<div class="mapContent">
+    <div class="mapTop">
+        <div class="locImg hide" id="locImg"><img src="http://cdn.kikakeyboard.com/open_platform/images/map/maps5.png" id="currentImg"></div>
+        <input id="pac-input" class="controls hide" type="text" placeholder="Search">
+        <div id="map"></div>
+    </div>
+    <div id="currentDiv" class="currentDiv"><img src="http://cdn.kikakeyboard.com/open_platform/images/map/maps3.png" class="currentImg"><p>Send this Location</p></div>
+</div>
+<div id="arrowDiv" class="arrowDiv hide">
+    <img src="http://cdn.kikakeyboard.com/open_platform/images/map/maps3.png">
+    <div id="currentLocation">
+        <!--<p>Current Location</p>-->
+        <!--<p class="placeName"><span>同仁堂</span><span class="distance">500m</span></p>-->
+        <!--<div class="placeDetailName">北京市和平里中街同仁堂</div>-->
+    </div>
+    <img id="arrow" src="http://cdn.kikakeyboard.com/open_platform/images/map/ic_send.png">
+</div>
+<div class="nearbyDiv hide" id="nearbyDiv" >
+    <p class="title3">Nearby Places</p>
+    <ul  id="nearbyList">
+        <!--<li>-->
+        <!--<p class="placeName">同仁堂<span class="distance">500m</span></p>-->
+        <!--<div class="placeDetailName">北京市和平里中街同仁堂</div>-->
+        <!--</li>-->
+    </ul>
+</div>
+<script src="./js/jquery.min.js?__inline"></script>
+<script src="./js/utils.js?__inline"></script>
+<script src="./js/map.js?__inline"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX1NCBWPX58HRmejWqiN3d1cYT6qa1Vs0&libraries=places&callback=initMap" async defer></script>
+
+</body>
+</html>

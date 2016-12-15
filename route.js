@@ -14,9 +14,9 @@ module.exports = function(app) {
 	app.get('/trendingV', function(req, res) {
 		res.render('trendingV');
 	});
-	app.get('/trendingVPlay/:title/:id/:imgUrl', function(req, res) {
+	app.get('/trendingVPlay', function(req, res) {
 
-		res.render('trendingVPlay',{title:req.params.title , id : req.params.id, imgUrl : req.params.imgUrl});
+		res.render('trendingVPlay',{title:req.query.title , id : req.query.id, imgUrl : req.query.imgUrl});
 	});
 	app.get('/wiki', function(req, res) {
 		res.render('wiki');

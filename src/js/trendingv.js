@@ -93,6 +93,6 @@ kikaopen.onWindowChanged = function (full,width,height){
     localStorage.full = full;
 }
 function play(title,id,url){
-    window.location.href='./trendingVPlay/'+encodeURIComponent(title)+'/'+id+'/'+encodeURIComponent(url);
+    window.location.href='./trendingVPlay?title='+title+'&id='+id+'&imgUrl='+url;
 }
 bindDrop();
